@@ -14,15 +14,24 @@ public class SLList<T> implements ISLList<T>{
     private SLNode<T> head = null;
     private int size = 0;
     
+    /**
+     * 
+     */
     public SLList() {
         
     }
     
+    /* (non-Javadoc)
+     * @see com.dfunk.linkedlist.ISLList#size()
+     */
     @Override
     public int size() {
         return size;
     }
     
+    /* (non-Javadoc)
+     * @see com.dfunk.linkedlist.ISLList#add(java.lang.Object)
+     */
     @Override
     public void add(T item) {
         SLNode<T> node = new SLNode<T>();
@@ -38,6 +47,9 @@ public class SLList<T> implements ISLList<T>{
         size++;
     }
     
+    /* (non-Javadoc)
+     * @see com.dfunk.linkedlist.ISLList#remove(java.lang.Object)
+     */
     @Override
     public T remove(T item) {
         T rItem = null;
@@ -63,18 +75,27 @@ public class SLList<T> implements ISLList<T>{
         return rItem;
     }
 
+    /* (non-Javadoc)
+     * @see com.dfunk.linkedlist.ISLList#removeAll(java.lang.Object)
+     */
     @Override
     public int removeAll(T item) {
         // TODO Auto-generated method stub
         return 0;
     }
 
+    /* (non-Javadoc)
+     * @see com.dfunk.linkedlist.ISLList#removeDuplicates(java.lang.Object)
+     */
     @Override
     public int removeDuplicates(T item) {
         // TODO Auto-generated method stub
         return 0;
     }
 
+    /* (non-Javadoc)
+     * @see com.dfunk.linkedlist.ISLList#find(java.lang.Object)
+     */
     @Override
     public T find(T item) {
 
