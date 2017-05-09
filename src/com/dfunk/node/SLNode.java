@@ -19,8 +19,8 @@ public class SLNode<T> {
         return item;
     }
 
-    public void item(T data) {
-        this.item = data;
+    public void item(T item) {
+        this.item = item;
     }
 
     public SLNode<T> next() {

@@ -33,6 +33,7 @@ public class SLListTest {
         ISLList<Integer> linkedList = new SLList<Integer>();
         
         linkedList.add(1);
+        linkedList.add(null);
         
         assertEquals(1, linkedList.size());
         assertTrue(1 == linkedList.find(1));
@@ -95,6 +96,7 @@ public class SLListTest {
         
         linkedList2.add(1);
         linkedList2.add(2);
+        linkedList2.add(null);
         linkedList2.add(3);
         
         assertNull(linkedList1.find(1));
